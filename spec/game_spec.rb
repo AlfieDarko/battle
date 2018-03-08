@@ -14,5 +14,10 @@ describe Game do
       expect(player2).to receive :reduce_points
       subject.attack(player2)
     end
+
+    it 'switches turns after an .attack' do
+      subject.attack(player2)
+      expect(subject.turn).to eq player2
+    end
   end
 end
