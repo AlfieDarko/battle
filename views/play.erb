@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div.names {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="names">
+      <b> <%= @player_1_name %></b> vs <b><%= @player_2_name %> </b>
+      <br>
+      <div class="hitpoints">
+        100 hp vs 100 hp
+      </div>
+
+      <div class="playerattack">
+        <form class="" action="/attackpage" method="get">
+          <button type="submit" name="attack">Attack </button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
