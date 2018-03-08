@@ -2,7 +2,7 @@ require 'game'
 
 describe Game do
   let(:player1) { double 'player1' }
-  let(:player2) { double 'player2' }
+  let(:player2) { double 'player2', reduce_points: 10 }
   subject(:subject) { Game.new(player1, player2) }
 
   it 'should initialize turn with player 1' do
